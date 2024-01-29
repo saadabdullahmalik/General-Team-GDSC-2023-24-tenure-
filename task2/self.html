@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Saad-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #055c8b;
+    color: white;
+    font-family: 'Poppins', sans-serif;;
+}
+nav{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+    padding: 10px;
+    background-color: rgb(229, 225, 225);
+    border-radius: 54px;
+    color: #032030;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-color: rgb(165, 163, 163);
+
+}
+div.left{
+   font-size: 2rem;
+}
+span{
+    color: #032030;
+}
+nav a{
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+nav a:hover{
+    transform: translateY(-10px);
+}
+.firstsec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:20px 0;
+}
+.firstsec > div{
+    width: 33%;
+}
+.myimg{
+    width: 330px;
+    height: auto;
+    border-radius: 100%;
+    margin: 50px 0;
+}
+div.intro{
+    font-size: 120%;
+}
+.sec_left{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.blue{
+    color: #ffffff;
+    font-weight: bold;
+}
+hr{
+    border: 0;
+    background: #bacad31f;
+    margin: 26px;
+    height: 2px;
+    border-radius: 256px;
+}
+.secondsec{
+    display: contents;
+    justify-content: space-around;
+    align-items: left;
+    margin:40px 0;
+}
+
+.secondsec > div{
+        width: 33%;
+    }
+.aboutme{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 34px 563px;
+}
+.aboutme1{
+    margin: 36px 431px;
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left" style="font-weight: bold;">Portfolio <span></span></div>
+            <div class="right">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Education</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsec">
+            <div >
+                <p class="sec_left">Hello I'm <span class="blue">Saad</span>,</p>
+                <div class="intro">a passionate Web Developer</div>
+    
+            </div>
+            <div class="sec_right">
+                <img src="IMG_E7220.JPG" alt="my pic" class="myimg">
+            </div>
+        </section>
+    </main>
+        <hr>
+        <section class="secondsec">
+            <div class="aboutme">About Me</div>
+            <div class="aboutme1">
+                Im a full-time student, pursuing BS degree in Software Engineering at NUML. Also im an enthusiast of learning new skills and technologies. I am always ready to learn new things and face new challenges.
+            </div>
+        </section>
+        <hr>
+        <section class="secondsec">
+            <div class="aboutme">Education</div>
+            <div class="aboutme1">
+BS Software Engineering
+            </div>
+        </section>
+        <hr>
+        <section class="secondsec">
+            <div class="aboutme">Contact</div>
+            <div class="aboutme1">
+                mail : saadhunmein@gmail.com
+                            </div>
+        </section>
+    </main>
+</body>
+</html>

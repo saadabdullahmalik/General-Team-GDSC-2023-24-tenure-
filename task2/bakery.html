@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Portfolio</title>
+    <link rel="stylesheet" href="bakery.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #fcfcfc;
+    --main-color:#C73;
+    --text-color:#312d2d;
+    --2nd-color:#b48383;
+    --other-color:#666666;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3;
+    --bgg-color:rgba(128, 128, 128, 0.441);
+    --text2-color:white;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    background: var(--bgg-color);
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 14%;
+    transition: all 0.5s ease;
+}
+.logo{
+    color:var(--text2-color);
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text2-color);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 22px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.icons i {
+    font-size: 25px;
+    color: var(--text2-color);
+    margin-left: 5px;
+    margin-right: 20px;
+    transition: all .50s ease;
+}
+
+.icons i:hover {
+    transform: translateY(-4px);
+    color: var(--main-color);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    background-image: url('bg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+.centered-box {
+    color:black;
+    padding: 50px;
+    text-align: center;
+}
+
+.home p.text1{
+    text-decoration: underline;
+}
+
+.menu h2 {
+    font-size: 2.5rem; 
+    color: var(--bg-color);
+    margin-bottom: 20px;
+}
+
+.menu {
+    padding: 50px 0;
+    text-align: center;
+    background: #000000;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    flex: 1;
+    margin: 0 55px; 
+    position: relative; 
+    overflow: hidden; 
+    aspect-ratio: 1/1;
+}
+
+.menu-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.menu-item:hover img {
+    filter: blur(1px); 
+}
+
+.menu-item:hover .item-name {
+    opacity: 1; 
+}
+
+.item-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    text-align: left;
+    background: #000000;
+}
+
+.contact-column {
+    flex: 0 0 calc(33.333% - 20px); 
+    margin-right: 20px; 
+}
+
+.contact-column:last-child {
+    margin-right: 0;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--bg-color);
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 15px; 
+    text-align: center; 
+    justify-content: center;
+    margin-bottom: 15px; 
+}
+
+.contact p a{
+    color: var(--bg-color);
+    text-decoration: underline;
+}
+.contact p a:hover{
+    color: var(--main-color);
+}
+
+.contact ul {
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact ul li {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    color: var(--bg-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contact ul li a:hover {
+    color: var(--main-color);
+}
+</style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Mithas</a>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+    </header>
+    <section class="home">
+        <divclass="">
+        </div>
+        <div class="centered-box">
+            <p style="font-size: 50px; font-weight: bold;" >Mithas</p>
+            <p style="font-size: 40px; font-weight: bold;" >By</p>
+            <p style="font-size: 50px; font-weight: bold;" >Saad</p>
+        </div>
+    </section>
+<section class="menu">
+    <h2>Menu</h2>
+    <div class="row">
+        <div class="menu-item">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2017/10/Onion-French-Bread-Loaves_exps32503_FM143298B03_06_1bC_RMS.jpg" alt="Bread and Loaves">
+            <a href="#menu"><span class="item-name">Bread and Loaves</span></a>
+        </div>
+        <div class="menu-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.D65P2smLdGljNjeTSPyOPgHaHa&pid=Api&P=0&h=220" alt="Cakes">
+            <a href="#menu"><span class="item-name">Cakes</span></a>
+        </div>
+        <div class="menu-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.RpORXC6CvWeFKbGxnNXlzAHaFP&pid=Api&P=0&h=220" alt="Sandwich">
+            <a href="#menu"><span class="item-name">Sandwiches</span></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="menu-item">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Z3A0QCJsZWGyOiaQQqeX3gHaE8&pid=Api&P=0&h=220" alt="Coffee">
+            <a href="#menu"><span class="item-name">Coffee</span></a>
+        </div>
+        <div class="menu-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.n7EOon8-rH41hFOgmFJM7AHaF7&pid=Api&P=0&h=220" alt="Pasteries">
+           <a href="#menu"> <span class="item-name">Pasteries</span></a>
+        </div>
+        <div class="menu-item">
+            <img src="https://naturals.pk/cdn/shop/products/12_750x.jpg?v=1629969965 " alt="Donuts">       
+            <a href="#menu"><span class="item-name">Donuts</span></a>
+        </div>
+    </div>
+</section>
+<hr>
+<section class="contact" id="contact">
+    <div class="contact-column">
+        <h2>CONTACT</h2>
+        <p><i class='bx bxs-envelope'></i><a href="#contact">@saadhunmein@gmail.com</a></p>
+        <p>Our mailbox currently has a response time of 3-5 working days. For More Information Contact us at our Instagram or Facebook.</p>
+    </div>
+    <div class="contact-column">
+        <h2>PRESS ENQUIRIES</h2>
+        <p><i class='bx bxs-envelope'></i><a href="#contact">@saadhunmein@gmail.com</a></p>
+        <p>If you would like to get in touch with our PR team, please e-mail above.</p>
+    </div>
+    <div class="contact-column">
+        <h2>NAVIGATION</h2>
+        <ul>
+            <li><a href="#contact">Find a bakery</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Allergen and Calorie Information</a></li>
+            <li><a href="#">Whistleblower System</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </div>
+</section>
+</body>
