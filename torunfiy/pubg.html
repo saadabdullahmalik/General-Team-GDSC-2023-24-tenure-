@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PUBG Mobile | Sportify</title>
+    <link rel="stylesheet" type="text/css" href="tournify css.css">
+</head>
+<body>
+    <header>
+        <h1>Sportify - PUBG Mobile</h1>
+        <header>
+            <ul>
+                <li ><a  href="#"><img src="facebook.webp" alt="Facebook"></a></li>
+                <li><a href="#"><img src="twitter.webp" alt="Twitter"></a></li>
+                <li><a href="#"><img src="Instagram.webp" alt="Instagram"></a></li>
+            </ul>
+        </header>
+    </header>
+    <main>
+        <div class="py-20">
+            <div class="container mx-auto">
+               
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <a><img src="pubd.jpg" alt="About Image" class="w-full rounded-lg" style="width: 25%;"></a>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-lg text-gray-700">PUBG Mobile is a free-to-play battle royale video game developed by LightSpeed &amp; Quantum Studio, a division of Tencent Games. It is a mobile game adaptation of PUBG: Battlegrounds. It was initially released for Android and iOS on 19 March 2018.</p>
+                        <p class="text-lg text-gray-700 mt-4">It is a TPP and FPP arcade game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="registration-button">
+            <button type="button" id="register-btn" style="width: 5cm; height: 2cm; color: black;"><h4>Register</h4></button>
+        </div>
+    </main>
+    <script>
+        document.getElementById('register-btn').addEventListener('click', function(){
+            window.location.href = 'registration-form.html';
+        });
+    </script>
+</body>
+</html>

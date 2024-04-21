@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form | Sportify</title>
+    <link rel="stylesheet" type="text/css" href="tournify css.css">
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+
+		#registration-form-submit {
+			width: 300px;
+			background-color: #fff;
+			padding: 20px;
+			margin: 50px auto;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+			border-radius: 5px;
+			backdrop-filter: blur(5px);
+		}
+
+		label {
+			display: block;
+			margin-top: 10px;
+			font-size: 12px;
+			color: #333;
+		}
+
+		input[type="text"], input[type="tel"], input[type="email"] {
+			width: 100%;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+			font-size: 10px;
+			margin-top: 5px;
+		}
+
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 5px 15px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+			font-size: 14px;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Sportify - Registration Form</h1>
+    </header>
+    <h2 style="text-align: center;">Registration Form </h2>
+	<main>
+		<form id="Registeration Form" style="text-align: center;">
+			<label for="team-name">Team Name:</label><br>
+			<input type="text" id="team-name" name="team-name"><br>
+			<label for="igl">In-Game Leader (IGL):</label><br>
+			<input type="text" id="igl" name="igl"><br>
+			<label for="whatsapp">WhatsApp Number:</label><br>
+			<input type="tel" id="whatsapp" name="whatsapp"><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email"><br>
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+    <footer style="height: 3%;">
+        <p>&copy; 2024 Sportify</p>
+    </footer>
+    <script>
+        document.getElementById('registration-form-submit').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Registration Complete');
+        });
+    </script>
+</body>
+</html>

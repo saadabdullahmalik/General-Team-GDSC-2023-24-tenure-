@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter-Strike: Global Offensive| Sportify</title>
+    <link rel="stylesheet" type="text/css" href="tournify css.css">
+</head>
+<body>
+    <header>
+        <h1>Sportify - Counter-Strike: Global Offensive</h1>
+        <header>
+            <ul>
+                <li ><a  href="#"><img src="facebook.webp" alt="Facebook"></a></li>
+                <li><a href="#"><img src="twitter.webp" alt="Twitter"></a></li>
+                <li><a href="#"><img src="Instagram.webp" alt="Instagram"></a></li>
+            </ul>
+        </header>
+    </header>
+    <main>
+        <div class="py-20">
+            <div class="container mx-auto">
+               
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <a><img src="csgo.png" alt="About Image" class="w-full rounded-lg" style="width: 25%;"></a>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-lg text-gray-700">Counter-Strike: Global Offensive (CS:GO) expands upon the team-based first person shooter gameplay the original Counter-Strike pioneered when it launched in 1999.</p>
+                        <p class="text-lg text-gray-700 mt-4"> Two teams compete in multiple rounds of objective-based game modes with the goal of winning enough rounds to win the match.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="registration-button">
+            <button type="button" id="register-btn" style="width: 5cm; height: 2cm; color: black;"><h4>Register</h4></button>
+        </div>
+    </main>
+    <script>
+        document.getElementById('register-btn').addEventListener('click', function(){
+            window.location.href = 'registration-form.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    margin-right: auto;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+header li {
+    margin-right: 1rem;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+header a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.game-box {
+    width: 200px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, filter 0.3s;
+    text-decoration: none;
+    color: #333;
+}
+
+.game-box img {
+    width: 100%;
+    height: auto;
+}
+
+.game-box p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.game-box:hover {
+    transform: scale(1.05);
+    filter: blur(0);
+}
+
+.game-box:hover ~.game-box {
+    filter: blur(2px);
+}
+
+.game-box:hover ~.game-box:hover {
+    filter: blur(0);
+}
+
+.game-info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.game-box:hover.game-info {
+    display: block;
+}
+#registration-form {
+    display: none;
+    margin-top: 2rem;
+}
+
+#registration-form h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#registration-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registration-form label {
+    margin-bottom: 0.5rem;
+}
+
+#registration-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#registration-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

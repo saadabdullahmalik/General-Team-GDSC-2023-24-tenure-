@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valorant| Sportify</title>
+    <link rel="stylesheet" type="text/css" href="tournify css.css">
+</head>
+<body>
+    <header>
+        <h1>Sportify - Valorant</h1>
+        <header>
+            <ul>
+                <li ><a  href="#"><img src="facebook.webp" alt="Facebook"></a></li>
+                <li><a href="#"><img src="twitter.webp" alt="Twitter"></a></li>
+                <li><a href="#"><img src="Instagram.webp" alt="Instagram"></a></li>
+            </ul>
+        </header>
+    </header>
+    <main>
+        <div class="py-20">
+            <div class="container mx-auto">
+               
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <a><img src="Valorant.jpeg" alt="About Image" class="w-full rounded-lg" style="width: 25%;"></a>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-lg text-gray-700">Valorant is an online multiplayer computer game, produced by Riot Games. It is a first-person shooter game, consisting of two teams of five, where one team attacks and the other defends. Players control characters known as 'agents', who all have different abilities to use during gameplay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="registration-button">
+            <button type="button" id="register-btn" style="width: 5cm; height: 2cm; color: black;"><h4>Register</h4></button>
+        </div>
+    </main>
+    <script>
+        document.getElementById('register-btn').addEventListener('click', function(){
+            window.location.href = 'registration-form.html';
+        });
+    </script>
+</body>
+</html>
